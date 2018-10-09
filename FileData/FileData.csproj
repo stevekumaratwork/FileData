@@ -43,11 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FileDataRequestValidator.cs" />
-    <Compile Include="FileDetails.cs" />
-    <Compile Include="IInputArgumentValidator.cs" />
-    <Compile Include="InputArgument.cs" />
-    <Compile Include="OutputStatus.cs" />
+    <Compile Include="FileInformationService.cs" />
+    <Compile Include="FileRepositoryExternalService.cs" />
+    <Compile Include="IFileRepository.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -10,9 +10,23 @@ namespace FileData
     {
         static void Main(string[] args)
         {
+            FileRepositoryExternalService frs = new FileData.FileRepositoryExternalService();
 
+            FileInformationService service = new FileInformationService(frs);
 
+            if (args.Length > 1)
+            {
+                Console.WriteLine("Version Number : " + service.GetVersionNumber(args[0], args[1]));
 
+                Console.WriteLine("File Size : " + service.GetFileSize(args[0], args[1]));
+            }
+            else
+            {
+                Console.WriteLine("Please type first and second arguments");
+            }
+            
+            Console.ReadLine();
+            
         }
     }
 }
